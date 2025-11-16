@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-banner {
+    position: relative;
+    background-image: url('/images/sushi-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+/* DARK OVERLAY */
+.main-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);  
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2; 
+    max-width: 40%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff6b00;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
