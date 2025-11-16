@@ -46,7 +46,7 @@
     background-repeat: no-repeat;
     background-position:center;
     width: 100%;
-    height: 600px;
+    height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -76,16 +76,18 @@
     margin-right: 100px;
 }
 
-.banner-content h1 {
+.banner-content h1{
     font-size: 48px;
     font-weight: bold;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    color: #fff;
 }
 
-.banner-content p {
+.banner-content p{
     font-size: 36px;
     text-align: center;
+    color: #fff;
     font-family: 'Merriweather', sans-serif;
 }
 
@@ -107,6 +109,82 @@
     background: #bc4c01;
 }
 
+#about {
+    background-image: url('/images/about-us-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 600px;
+    
+}
+
+#about p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.about-content {
+    background: rgba(0, 0, 0, 0.5);  
+    height: 100%;
+    padding: 100px 50px;  
+}
+
+#about h2 {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+.menu-section-images {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.menu-section-images h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-item h4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px 0;
+    font-size: 1.1rem;
+}
+
+.menu-item p {
+    padding: 0 15px 15px;
+    font-size: 0.9rem;
+    color: #444;
+}
 
 
 footer {
@@ -114,6 +192,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 0;
+    font-family: 'Lato', sans-serif;
     margin-top: 40px;
 }
 
