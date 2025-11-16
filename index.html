@@ -1,413 +1,873 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Jay's Sushi Place</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
-  <div class="container">
-    
-    <a class="navbar-brand" href="#">
-      <img src="images/logo.png" alt="Logo">
-    </a>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" />
+          </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto gap-3">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-         <li class="nav-item">
-    <a class="nav-link text-uppercase text-dark" href="#order"
-     data-bs-toggle="modal" data-bs-target="#orderModal">
-    Order Now
-  </a>
-</li>
-
-      </ul>
-    </div>
-
-  </div>
-</nav>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-dark"
+                  href="#order"
+                  data-bs-toggle="modal"
+                  data-bs-target="#orderModal"
+                >
+                  Order Now
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-<main>
-    <section class="main-banner">
+    <!-- Main Content -->
+    <main>
+      <!-- Home Banner -->
+      <section class="main-banner">
         <div class="banner-content">
-            <h1>Welcome to Jay's Sushi Place</h1>
-            <p>Experience the freshest sushi in town!</p>
-            <a href="#order" class="btn-custom">Order Now</a>
+          <h1>Welcome to Jay's Sushi Place</h1>
+          <p>Experience the freshest sushi in town!</p>
+          <a href="#order" class="btn-custom">Order Now</a>
         </div>
-    </section>
-    <section id="about">
+      </section>
+      <!-- About Us Section -->
+      <section id="about">
         <div class="about-content">
-            <h2>About Us</h2>
-            <p>At Jay’s Sushi Place, we believe that great sushi begins with great ingredients. Our chefs work closely with trusted local suppliers to source the freshest fish, crisp vegetables, and authentic Japanese imports. Every roll, nigiri, and sashimi plate is crafted with care, reflecting both traditional techniques and our own modern twist. We take pride in serving sushi that not only tastes incredible but also looks like a work of art.
-            What started as a small passion project has grown into a welcoming community spot where friends, families, and food lovers come together. 
-            </p>
+          <h2>About Us</h2>
+          <p>
+            At Jay’s Sushi Place, we believe that great sushi begins with great
+            ingredients. Our chefs work closely with trusted local suppliers to
+            source the freshest fish, crisp vegetables, and authentic Japanese
+            imports. Every roll, nigiri, and sashimi plate is crafted with care,
+            reflecting both traditional techniques and our own modern twist. We
+            take pride in serving sushi that not only tastes incredible but also
+            looks like a work of art. What started as a small passion project
+            has grown into a welcoming community spot where friends, families,
+            and food lovers come together.
+          </p>
         </div>
-    </section>
-    <section id="menu" class="py-5 bg-dark text-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Menu</h2>
+      </section>
 
-    <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="3"></button>
-      </div>
+      <!-- Menu Section -->
+      <section id="menu" class="py-5 bg-dark text-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Our Menu</h2>
 
-      <div class="carousel-inner">
-
-        <!-- SLIDE 1: NIGIRI -->
-        <div class="carousel-item active">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h3 class="mb-3">Nigiri</h3>
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Salmon Nigiri</span><span>£4.20</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Tuna Nigiri</span><span>£4.80</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Prawn Nigiri</span><span>£3.90</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Eel (Unagi) Nigiri</span><span>£5.20</span>
-                </li>
-              </ul>
+          <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="3"
+              ></button>
             </div>
-            <div class="col-md-6 text-center">
-              <img src="/images/menu/nigiri.png" class="img-fluid rounded shadow" alt="Nigiri sushi">
+
+            <div class="carousel-inner">
+              <!-- SLIDE 1: NIGIRI -->
+              <div class="carousel-item active">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Nigiri</h3>
+                    <ul class="list-unstyled">
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Salmon Nigiri</span><span>£4.20</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Tuna Nigiri</span><span>£4.80</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Prawn Nigiri</span><span>£3.90</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Eel (Unagi) Nigiri</span><span>£5.20</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img
+                      src="/images/menu/nigiri.png"
+                      class="img-fluid rounded shadow"
+                      alt="Nigiri sushi"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2: ROLLS / MAKI -->
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Rolls &amp; Maki</h3>
+                    <ul class="list-unstyled">
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>California Roll</span><span>£5.50</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Salmon Avocado Roll</span><span>£5.80</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Spicy Tuna Roll</span><span>£6.20</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Cucumber Maki</span><span>£3.20</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img
+                      src="/images/menu/rolls-maki.png"
+                      class="img-fluid rounded shadow"
+                      alt="Sushi rolls"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 3: SPECIALS -->
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Special Rolls</h3>
+                    <ul class="list-unstyled">
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Dragon Roll</span><span>£10.90</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Rainbow Roll</span><span>£11.50</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Volcano Roll</span><span>£9.80</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Crispy Tempura Roll</span><span>£8.90</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img
+                      src="/images/menu/specials.png"
+                      class="img-fluid rounded shadow"
+                      alt="Special sushi roll"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 4: SIDES -->
+              <div class="carousel-item">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Sides</h3>
+                    <ul class="list-unstyled">
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Miso Soup</span><span>£2.50</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Edamame</span><span>£3.20</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Seaweed Salad</span><span>£3.80</span>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between border-bottom py-2"
+                      >
+                        <span>Prawn Gyoza (5 pcs)</span><span>£4.90</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img
+                      src="/images/menu/sides.png"
+                      class="img-fluid rounded shadow"
+                      alt="Sides"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#menuCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#menuCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
         </div>
+      </section>
 
-        <!-- SLIDE 2: ROLLS / MAKI -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h3 class="mb-3">Rolls &amp; Maki</h3>
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>California Roll</span><span>£5.50</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Salmon Avocado Roll</span><span>£5.80</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Spicy Tuna Roll</span><span>£6.20</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Cucumber Maki</span><span>£3.20</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="/images/menu/rolls-maki.png" class="img-fluid rounded shadow" alt="Sushi rolls">
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE 3: SPECIALS -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h3 class="mb-3">Special Rolls</h3>
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Dragon Roll</span><span>£10.90</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Rainbow Roll</span><span>£11.50</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Volcano Roll</span><span>£9.80</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Crispy Tempura Roll</span><span>£8.90</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="/images/menu/specials.png" class="img-fluid rounded shadow" alt="Special sushi roll">
-            </div>
-          </div>
-        </div>
-
-        <!-- SLIDE 4: SIDES -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h3 class="mb-3">Sides</h3>
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Miso Soup</span><span>£2.50</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Edamame</span><span>£3.20</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Seaweed Salad</span><span>£3.80</span>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Prawn Gyoza (5 pcs)</span><span>£4.90</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="/images/menu/sides.png" class="img-fluid rounded shadow" alt="Sides">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </div>
-</section>
-
-    <section id="contact" class="py-5 bg-light text-dark">
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 bg-light text-dark">
         <div class="contact-content">
-            <h2>Contact Us</h2>
-            <p>Have questions or want to make an order? Reach out to us!</p>
-            <p>Email: info@jayssushiplace.com</p>
+          <h2>Contact Us</h2>
+          <p>Have questions or want to make an order? Reach out to us!</p>
+          <p>Email: info@jayssushiplace.com</p>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
 
-
+    <!-- Footer -->
 
     <footer>
-        <p>&copy; 2025 Jay's Sushi Place. All rights reserved.</p>
+      <p>&copy; 2025 Jay's Sushi Place. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ORDER MODAL -->
-<!-- ORDER MODAL -->
-<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Place Your Order</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <form id="orderForm">
-          <div class="table-responsive">
-
-            <table class="table align-middle">
-              <thead class="table-light">
-                <tr>
-                  <th>Item</th>
-                  <th class="text-end">Price</th>
-                  <th class="text-center">Qty</th>
-                  <th class="text-end">Subtotal</th>
-                </tr>
-              </thead>
-
-              <tbody>
-
-                <!-- ===================
-                      NIGIRI
-                ==================== -->
-                <tr class="table-secondary">
-                  <td colspan="4"><strong>Nigiri</strong></td>
-                </tr>
-
-                <tr>
-                  <td>Salmon Nigiri</td>
-                  <td class="text-end">£4.20</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="4.20"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Tuna Nigiri</td>
-                  <td class="text-end">£4.80</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="4.80"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Prawn Nigiri</td>
-                  <td class="text-end">£3.90</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="3.90"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Eel (Unagi) Nigiri</td>
-                  <td class="text-end">£5.20</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="5.20"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-
-                <!-- ===================
-                      ROLLS & MAKI
-                ==================== -->
-                <tr class="table-secondary">
-                  <td colspan="4"><strong>Rolls & Maki</strong></td>
-                </tr>
-
-                <tr>
-                  <td>California Roll</td>
-                  <td class="text-end">£5.50</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="5.50"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Salmon Avocado Roll</td>
-                  <td class="text-end">£5.80</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="5.80"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Spicy Tuna Roll</td>
-                  <td class="text-end">£6.20</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="6.20"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Cucumber Maki</td>
-                  <td class="text-end">£3.20</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="3.20"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-
-                <!-- ===================
-                      SPECIAL ROLLS
-                ==================== -->
-                <tr class="table-secondary">
-                  <td colspan="4"><strong>Special Rolls</strong></td>
-                </tr>
-
-                <tr>
-                  <td>Dragon Roll</td>
-                  <td class="text-end">£10.90</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="10.90"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Rainbow Roll</td>
-                  <td class="text-end">£11.50</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="11.50"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Volcano Roll</td>
-                  <td class="text-end">£9.80</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="9.80"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Crispy Tempura Roll</td>
-                  <td class="text-end">£8.90</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="8.90"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-
-                <!-- ===================
-                      SIDES
-                ==================== -->
-                <tr class="table-secondary">
-                  <td colspan="4"><strong>Sides</strong></td>
-                </tr>
-
-                <tr>
-                  <td>Miso Soup</td>
-                  <td class="text-end">£2.50</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="2.50"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Edamame</td>
-                  <td class="text-end">£3.20</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="3.20"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Seaweed Salad</td>
-                  <td class="text-end">£3.80</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="3.80"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-                <tr>
-                  <td>Prawn Gyoza (5 pcs)</td>
-                  <td class="text-end">£4.90</td>
-                  <td class="text-center"><input type="number" class="form-control form-control-sm qty-input" min="0" value="0" data-price="4.90"></td>
-                  <td class="text-end line-total">£0.00</td>
-                </tr>
-
-              </tbody>
-            </table>
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Place Your Order</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
           </div>
 
-          <!-- TOTAL + NAME -->
-          <div class="d-flex justify-content-between mt-3">
-            <div>
-              <label class="form-label">Your Name</label>
-              <input type="text" class="form-control form-control-sm" id="customerName" required>
-            </div>
+          <div class="modal-body">
+            <form id="orderForm">
+              <div class="table-responsive">
+                <table class="table align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Item</th>
+                      <th class="text-end">Price</th>
+                      <th class="text-center">Qty</th>
+                      <th class="text-end">Subtotal</th>
+                    </tr>
+                  </thead>
 
-            <div class="text-end">
-              <h4>Total: <span id="orderTotal">£0.00</span></h4>
-            </div>
+                  <tbody>
+                    <!-- Nigiri -->
+                    <tr class="table-secondary">
+                      <td colspan="4"><strong>Nigiri</strong></td>
+                    </tr>
+
+                    <tr>
+                      <td>Salmon Nigiri</td>
+                      <td class="text-end">£4.20</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="4.20"
+                          />
+                          <button
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Tuna Nigiri</td>
+                      <td class="text-end">£4.80</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="4.80"
+                          />
+                          <button
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Prawn Nigiri</td>
+                      <td class="text-end">£3.90</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="3.90"
+                          />
+                          <button
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Eel (Unagi) Nigiri</td>
+                      <td class="text-end">£5.20</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="5.20"
+                          />
+                          <button
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <!-- Rolls and Maki -->
+                    <tr class="table-secondary">
+                      <td colspan="4"><strong>Rolls & Maki</strong></td>
+                    </tr>
+
+                    <tr>
+                      <td>California Roll</td>
+                      <td class="text-end">£5.50</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="5.50"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Salmon Avocado Roll</td>
+                      <td class="text-end">£5.80</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="5.80"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Spicy Tuna Roll</td>
+                      <td class="text-end">£6.20</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="6.20"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Cucumber Maki</td>
+                      <td class="text-end">£3.20</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="3.20"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <!-- Special Rolls -->
+                    <tr class="table-secondary">
+                      <td colspan="4"><strong>Special Rolls</strong></td>
+                    </tr>
+
+                    <tr>
+                      <td>Dragon Roll</td>
+                      <td class="text-end">£10.90</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="10.90"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Rainbow Roll</td>
+                      <td class="text-end">£11.50</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="11.50"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Volcano Roll</td>
+                      <td class="text-end">£9.80</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="9.80"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Crispy Tempura Roll</td>
+                      <td class="text-end">£8.90</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="8.90"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <!-- Sides -->
+                    <tr class="table-secondary">
+                      <td colspan="4"><strong>Sides</strong></td>
+                    </tr>
+
+                    <tr>
+                      <td>Miso Soup</td>
+                      <td class="text-end">£2.50</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="2.50"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Edamame</td>
+                      <td class="text-end">£3.20</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="3.20"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Seaweed Salad</td>
+                      <td class="text-end">£3.80</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="3.80"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+
+                    <tr>
+                      <td>Prawn Gyoza (5 pcs)</td>
+                      <td class="text-end">£4.90</td>
+                      <td class="text-center">
+                        <div class="input-group input-group-sm">
+                          <input
+                            type="number"
+                            class="form-control qty-input"
+                            min="0"
+                            value="0"
+                            data-price="4.90"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn btn-custom-color"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end line-total">£0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Total + Name -->
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                  <label class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-sm"
+                    id="customerName"
+                    required
+                  />
+                </div>
+
+                <div class="text-end">
+                  <h4>Total: <span id="orderTotal">£0.00</span></h4>
+                </div>
+              </div>
+            </form>
           </div>
 
-        </form>
-
+          <div class="modal-footer">
+            <button class="btn btn-secondary modal-btn" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button
+              type="submit"
+              form="orderForm"
+              class="btn-secondary btn-custom-color btn modal-btn"
+            >
+              Place Order
+            </button>
+          </div>
+        </div>
       </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" form="orderForm" class="btn btn-warning fw-bold">Place Order</button>
-      </div>
-
     </div>
-  </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
 
+        function saveCart() {
+          localStorage.setItem("cart", JSON.stringify(cart));
+        }
 
-</body>
+        function updateDisplay() {
+          let grandTotal = 0;
+
+          document.querySelectorAll("#orderForm tbody tr").forEach((row) => {
+            const nameCell = row.children[0];
+            const priceCell = row.children[1];
+            const subtotalCell = row.querySelector(".line-total");
+
+            if (!nameCell || !priceCell || !subtotalCell) return;
+
+            const name = nameCell.innerText.trim();
+            const price = parseFloat(priceCell.innerText.replace("£", "")) || 0;
+            const qty = cart[name] || 0;
+
+            const subtotal = qty * price;
+            subtotalCell.textContent = "£" + subtotal.toFixed(2);
+
+            grandTotal += subtotal;
+
+            const qtyInput = row.querySelector(".qty-input");
+            if (qtyInput) qtyInput.value = qty;
+          });
+
+          const totalElem = document.getElementById("orderTotal");
+          if (totalElem) {
+            totalElem.textContent = "£" + grandTotal.toFixed(2);
+          }
+        }
+
+        // Handle Add button clicks
+        document.addEventListener("click", (e) => {
+          if (!e.target.classList.contains("add-btn")) return;
+
+          const row = e.target.closest("tr");
+          const nameCell = row.children[0];
+          const priceCell = row.children[1];
+          const qtyInput = row.querySelector(".qty-input");
+
+          if (!nameCell || !priceCell || !qtyInput) return;
+
+          const name = nameCell.innerText.trim();
+          let qty = parseInt(qtyInput.value) || 0;
+          if (qty < 0) qty = 0;
+
+          cart[name] = qty;
+          saveCart();
+          updateDisplay();
+        });
+
+        // Handle form submit for Place Order
+        orderForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const nameInput = document.getElementById("customerName");
+          const customerName = nameInput ? nameInput.value || "Guest" : "Guest";
+          const totalText =
+            document.getElementById("orderTotal")?.textContent || "£0.00";
+
+          let orderSummary = "";
+          for (const item in cart) {
+            if (cart[item] > 0) {
+              orderSummary += `${item} x ${cart[item]}\n`;
+            }
+          }
+
+          if (!orderSummary) {
+            alert("Please add at least one item to your order.");
+            return;
+          }
+
+          // Show confirmation
+          alert(
+            `Order received!\n\nThank you, ${customerName}!\nTotal: ${totalText}`
+          );
+
+          // Reset cart + form
+          cart = {};
+          saveCart();
+          updateDisplay();
+          orderForm.reset();
+
+          // Close modal automatically
+          const modal = bootstrap.Modal.getInstance(
+            document.getElementById("orderModal")
+          );
+          if (modal) {
+            modal.hide();
+          }
+
+          // Redirect to homepage
+          setTimeout(() => {
+            window.location.hash = "#home";
+          }, 300);
+        });
+
+        // When modal opens, refresh UI from saved cart
+        const orderModal = document.getElementById("orderModal");
+        if (orderModal) {
+          orderModal.addEventListener("shown.bs.modal", updateDisplay);
+        }
+
+        // Initial render
+        updateDisplay();
+      });
+    </script>
+  </body>
 </html>

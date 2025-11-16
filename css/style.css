@@ -91,6 +91,26 @@
 .btn-custom:hover {
     background: #bc4c01;
 }
+.btn-custom-color,
+.btn-custom-color:focus,
+.btn-custom-color:active,
+.btn-custom-color:focus-visible {
+    background-color: #ff6b00 !important;
+    color: #fff !important;
+    font-family: 'Lato', sans-serif !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.modal-btn {
+    padding: 12px 20px !important; 
+    border-radius: 5px !important;
+    font-family: 'Lato', sans-serif !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+}
+
 
 #about {
     background-image: url('/images/about-us-image.jpg');
